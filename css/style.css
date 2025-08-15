@@ -1,11 +1,7 @@
 * {
-    /* font-family: roboto, sans-serif; */
-    /* font-family: 'Dancing Script', cursive; */
     font-family: "Playwrite MX Guides", cursive;
     font-weight: 400;
     font-style: normal;
-
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,14 +14,34 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+}
+.gameScore {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    color: #FFB6C1;
+}
+.gameTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    /* color: #ADD8E6; */
+    color: #B2FF59;
+    font-weight: 700;
+    font-style: italic;
+}
+.scoreText {
+    font-size: 2.5rem;
+}
+p.scoreText {
+    color: #FFF176;
 }
 
 .buttons {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem;
 }
 
 .btn {
@@ -34,8 +50,12 @@ body {
     font-weight: 700;
     cursor: pointer;
     border: none;
+    transition: transform 0.5s ease;
 }
+.btn:hover {
+    transform: scale(1.2);
 
+}
 .rock {
     background: url(../img/rocky.png);
     background-size: contain;
@@ -63,7 +83,16 @@ body {
     }
 
 .result {
-    font-size: 75px;
+    font-size: 2.5rem;
+    font-weight: 500;
     font-style: italic;
-    color: #FBF7F5;
+    text-align: center;
+    /* color: #FBF7F5; */
+    /* color: #ADD8E6; */
+    color: #B2FF59;
+}
+.reset {
+    text-decoration: none;
+    color: #B2FF59;
+    border: 5px dotted #FFF176;
 }

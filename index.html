@@ -12,14 +12,28 @@
 
 </head>
 <body>
-    
+    <h1 class="gameTitle">ROCK PAPER SCISSORS SHOOT!</h1>
+    <div class="gameScore"> 
+        <div class="score">
+            <h2 class="scoreText">YOU:</h2>
+            <p id="yourScore" class="scoreText">0</p>
+        </div>
+        <div class="score">
+            <h2 class="scoreText">COMPUTER:</h2>
+            <p id="computerScore" class="scoreText">0</p>
+        </div>
+        <div class="score">
+            <h2 class="scoreText">GAME:</h2>
+            <p id="gameNumber" class="scoreText">0 / 10</p>
+        </div>
+        
+    </div>
     <div class="buttons">
         <button value="Rock" id="rock" class="btn rock"></button>
-        <button value="Rock" id="paper" class="btn paper"></button>
-        <button value="Rock" id="scissors" class="btn scissors"></button>
+        <button value="Paper" id="paper" class="btn paper"></button>
+        <button value="Scissors" id="scissors" class="btn scissors"></button>
     </div>
-    <h1 id="result" class="result">You Win!</h1>
-    <h1 id="result" class="result">computer win!</h1>
+    <h1 id="result" class="result"></h1>
 
     <script src="js/script.js"></script>
 </body>
