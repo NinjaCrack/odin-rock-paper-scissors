@@ -108,33 +108,37 @@ p.scoreText {
     align-items: center;
     height: 100vh;
     }
-  .buttons {
+    .gameScore {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .buttons {
     flex-wrap: wrap; 
     gap: 10px;       
   }
 
-  .rock, .paper, .scissors {
+    .rock, .paper, .scissors {
     width: 90px;   
     height: 90px;
   }
 
-  .scissors {
+    .scissors {
     height: 90px;
   }
 
-  .btn {
+    .btn {
     font-size: 18px;
   }
 
-  .gameTitle {
+    .gameTitle {
     font-size: 1.8rem;
   }
 
-  .scoreText {
+    .scoreText {
     font-size: 1.5rem;
   }
 
-  .result {
+    .result {
     font-size: 1.5rem;
   }
 }
