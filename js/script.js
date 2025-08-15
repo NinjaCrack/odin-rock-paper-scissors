@@ -43,7 +43,7 @@ function playRound(humanChoice, computerChoice) {
             resultOutput.textContent = 'Game Over! Draw!'
         }
         else {
-            resultOutput.textContent = 'Game Over! You Computer Wins!'
+            resultOutput.textContent = 'Game Over! Computer Wins!'
         }
 
         rockbtn.disabled = true;
