@@ -7,9 +7,12 @@
     padding: 0;
 }
 body {
-    background: url(../img/blackboard.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #3B6C4B;
+    background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 4px 4px, 8px 8px; 
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -53,7 +56,7 @@ p.scoreText {
     transition: transform 0.5s ease;
 }
 .btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 .rock {
@@ -95,4 +98,37 @@ p.scoreText {
     text-decoration: none;
     color: #B2FF59;
     border: 5px dotted #FFF176;
+}
+
+/* mobile view */
+@media (max-width: 768px) {
+  .buttons {
+    flex-wrap: wrap; 
+    gap: 10px;       
+  }
+
+  .rock, .paper, .scissors {
+    width: 90px;   
+    height: 90px;
+  }
+
+  .scissors {
+    height: 90px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .gameTitle {
+    font-size: 1.8rem;
+  }
+
+  .scoreText {
+    font-size: 1.5rem;
+  }
+
+  .result {
+    font-size: 1.5rem;
+  }
 }
