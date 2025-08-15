@@ -30,27 +30,14 @@ Test the game in action here: [Live Demo](https://ninjacrack.github.io/odin-rock
 
 ---
 
-## 📂 Project Structure
-
-odin-rock-paper-scissors/
-│
-├── css/
-│ └── style.css # Game styling
-├── img/
-│ ├── rocky.png # Rock button image
-│ ├── paper.png # Paper button image
-│ ├── scissors4.png # Scissors button image
-│ └── demo.png # Screenshot for README
-├── js/
-│ └── script.js # Game logic
-└── index.html # Main HTML file
 
 ## 🔧 How to Run Locally
 1. **Clone this repository**:
    ```bash
    git clone https://github.com/yourusername/rock-paper-scissors.git
 
-2. Navigate into the folder:
+2. **Navigate into the folder**:
+    ```bash
     cd rock-paper-scissors
 
-3. Open index.html in your browser.
+3. **Open index.html in your browser.**
