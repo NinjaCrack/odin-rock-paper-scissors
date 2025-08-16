@@ -77,8 +77,8 @@ p.scoreText {
     height: 250px;
 }
 .scissors {
-    width: 120px;
-    height: 250px;
+    width: 110px;
+    height: 230px;
     background-image: url(../img/scissors4.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -93,6 +93,9 @@ p.scoreText {
     /* color: #FBF7F5; */
     /* color: #ADD8E6; */
     color: #B2FF59;
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0;
 }
 .reset {
     text-decoration: none;
@@ -102,43 +105,50 @@ p.scoreText {
 
 /* mobile view */
 @media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
+    body {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
     }
     .gameScore {
-      flex-direction: column;
-      padding: 10px;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2.2rem;
+        flex-wrap: wrap;
+        padding: 0;
+        font-size: 0.6rem;
+
     }
     .buttons {
-    flex-wrap: wrap; 
-    gap: 10px;       
+        justify-content: space-around;
+        align-content: center;
+        align-items: center; 
+        gap: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
   }
 
-    .rock, .paper, .scissors {
-    width: 90px;   
-    height: 90px;
-  }
-
+    .rock, .paper {
+        width: 100px;
+        height: 100px;
+    }
     .scissors {
-    height: 90px;
-  }
+        width: 50px;
+        height: 100px;
+    }
 
     .btn {
-    font-size: 18px;
+        font-size: 18px;
   }
 
-    .gameTitle {
-    font-size: 1.8rem;
-  }
-
-    .scoreText {
-    font-size: 1.5rem;
+    .gameTitle, .scoreText {
+        font-size: 1.2rem;
   }
 
     .result {
-    font-size: 2.5em;
+        font-size: 1.5rem;
   }
 }
